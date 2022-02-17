@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class SenhaSegura {
+
+	public static void main(String[] args) {
+
+				Scanner sc = new Scanner(System.in); 
+				System.out.print("Insira a senha a ser testada:  ");  
+				String password = sc.nextLine();
+				sc.close();
+			}
+
+		}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class SenhaSegura {
+
+	public static void main(String[] args) {
+
+				Scanner sc = new Scanner(System.in); 
+				System.out.print("Insira a senha a ser testada:  ");  
+				String password = sc.nextLine();
+				int pass_len = password.length();
+				int min_character = 0;
+				sc.close();
+				
+				for(int i = 0; i<= pass_len; i++) {
+					if(Character.isUpperCase(password.charAt(i))) {
+						System.out.println("É maiuscula");
+					}
+					else if(Character.isLowerCase(password.charAt(i))) {
+						System.out.println("É minuscula");
+					}
+				}
+				if(password.length() < 6 ) {
+					System.out.println("Eba");
+					min_character = pass_len - 6;
+				}
+			}
+
+		}

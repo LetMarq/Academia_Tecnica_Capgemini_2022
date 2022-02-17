@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class AsteriscoEspaco {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);  
+		System.out.print("Entre com o valor de linhas:  ");  
+		int n = sc.nextInt();
+		sc.close();
+		for(int line = 0; line < n; line++) {
+			System.out.println(n* ' ' + 'a');
+		}
+	}
+
+}

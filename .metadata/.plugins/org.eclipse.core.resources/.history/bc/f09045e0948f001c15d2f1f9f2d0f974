@@ -1,0 +1,56 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+public class SenhaSegura {
+
+	public static void main(String[] args) {
+
+				Scanner sc = new Scanner(System.in); 
+				System.out.print("Insira a senha a ser testada:  ");  
+				String password = sc.nextLine();
+				int pass_len = password.length();
+				int min_character = 0;
+				int password_last = 6;
+				boolean uppercase = false, lowercase = false, special_char = false, digit = false;
+				List<Character> special_character = Arrays.asList('!', '@', '#', '$', '%', '^', 
+						'&', '*', '(', ')', '-', '+');
+				sc.close();
+				
+				for(int i = 0; i< pass_len; i++) {
+					char letter = password.charAt(i);
+					if(Character.isUpperCase(letter)) {
+						System.out.println("É maiuscula");
+						uppercase = true;
+						
+					}
+					else if(Character.isLowerCase(letter)) {
+						System.out.println("É minuscula");
+						lowercase = true;
+						
+					}
+					else if(special_character.stream().anyMatch(value->value==letter)) {
+						System.out.println("Especial");
+						special_char = true;
+						
+					}
+					else if(Character.isDigit(letter)) {
+						System.out.println("Numeross");
+						digit = true;
+					}
+				}
+				if(uppercase) password_last--;
+				if(lowercase) password_last--;
+				if(special_char) password_last--;
+				if(digit) password_last--;
+				System.out.println(password_last);
+					
+
+//				
+//				if(password.length() < 6 ) {
+//					System.out.println("Eba");
+//					min_character = pass_len - 6;
+//				}
+			}
+
+		}
