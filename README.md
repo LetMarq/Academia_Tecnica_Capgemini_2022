@@ -37,7 +37,9 @@ caracteres que devem ser adicionados para uma string qualquer ser considerada se
 
 A função `testSubstring` recebe a string a ser analisada, e movimenta duas janelas que percorrem a string de 0 até seu tamanho total (sliding window). 
 
-[!NOTE] Ex: Ovo, primeira janela: o, segunda janela: v, incremento, primeira janela: o, segunda janela: o, incremento, primeira janela: ov, segunda janela: vo. ![Exemplo](https://i.ibb.co/wyL2Djm/imagem-2022-02-18-171203.png)
+> Ex: Ovo, primeira janela: o, segunda janela: v, incremento, primeira janela: o, segunda janela: o, incremento, primeira janela: ov, segunda janela: vo. 
+
+> ![Exemplo](https://i.ibb.co/wyL2Djm/imagem-2022-02-18-171203.png)
 
 
 Já a função `compareStrings` recebe e compara as janelas, e caso uma equivalência entre os caracteres seja encontrada, o caracter é deletado de ambas as strings, e caso ao final ambas possuem tamanho zero, a função retorna `True` pois elas serão um anagrama, caso essa avaliação não seja verdadeira, a função retorna `False`. O código passou com sucesso nos testes.
