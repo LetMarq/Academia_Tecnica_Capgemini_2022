@@ -8,11 +8,11 @@ public class TesteUnitarioAsterisco {
 
 	@Test 
 	public void test() {
-		assertEquals("",AsteriscoEspaco.printAsterisco(0)); 
-		assertEquals("  *\n **\n***\n",AsteriscoEspaco.printAsterisco(3)); 
+		assertEquals("",AsteriscoEspaco.returnAsterisco(0)); 
+		assertEquals("  *\n **\n***\n",AsteriscoEspaco.returnAsterisco(3)); 
 		assertEquals("         *\n        **\n       ***\n      ****\n"
 				+ "     *****\n    ******\n   *******\n  ********\n"
-				+ " *********\n**********\n",AsteriscoEspaco.printAsterisco(10)); 
+				+ " *********\n**********\n",AsteriscoEspaco.returnAsterisco(10)); 
 	}
 
 }

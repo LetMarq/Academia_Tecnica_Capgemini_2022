@@ -8,17 +8,15 @@ public class AsteriscoEspaco {
 		System.out.print("Entre com o valor de linhas:  ");  
 		int n = sc.nextInt();
 		sc.close();
-		System.out.println(printAsterisco(n)); 
+		System.out.println(returnAsterisco(n)); 
 	}
-	public static String printAsterisco(int n) {
+	public static String returnAsterisco(int n) {
 		StringBuilder builder = new StringBuilder();
 		String space = " ";
 		String asterisk = "*";
 		for(int line = 1; line <= n; line++) {
 
-			builder.append(space.repeat(n-line) + asterisk.repeat(line) + '\n');
-//			System.out.println(space.repeat(n-line) + asterisk.repeat(line));
-			
+			builder.append(space.repeat(n-line) + asterisk.repeat(line) + '\n');			
 		}
 		return builder.toString();
 	}
