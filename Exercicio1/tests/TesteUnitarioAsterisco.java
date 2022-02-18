@@ -6,13 +6,13 @@ import org.junit.Test;
 
 public class TesteUnitarioAsterisco {
 
-	@Test 
+	@Test
 	public void test() {
-		assertEquals("",AsteriscoEspaco.returnAsterisco(0)); 
-		assertEquals("  *\n **\n***\n",AsteriscoEspaco.returnAsterisco(3)); 
+		assertEquals("", AsteriscoEspaco.returnAsterisco(0));
+		assertEquals("  *\n **\n***\n", AsteriscoEspaco.returnAsterisco(3));
 		assertEquals("         *\n        **\n       ***\n      ****\n"
-				+ "     *****\n    ******\n   *******\n  ********\n"
-				+ " *********\n**********\n",AsteriscoEspaco.returnAsterisco(10)); 
+				+ "     *****\n    ******\n   *******\n  ********\n" + " *********\n**********\n",
+				AsteriscoEspaco.returnAsterisco(10));
 	}
 
 }

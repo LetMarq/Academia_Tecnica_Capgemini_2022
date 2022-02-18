@@ -9,9 +9,9 @@ public class TesteUnitarioSenhaSegura {
 
 	@Test
 	public void test() {
-		assertEquals(3,SenhaSegura.passwordCheck("Ya3"));
-		assertEquals(0,SenhaSegura.passwordCheck("AbC3#q1"));
-		assertEquals(1,SenhaSegura.passwordCheck("Abb23"));
+		assertEquals(3, SenhaSegura.passwordCheck("Ya3"));
+		assertEquals(0, SenhaSegura.passwordCheck("AbC3#q1"));
+		assertEquals(1, SenhaSegura.passwordCheck("Abb23"));
 	}
 
 }
