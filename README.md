@@ -36,6 +36,7 @@ caracteres que devem ser adicionados para uma string qualquer ser considerada se
 <h2> Exercício 3 </h2>
 
 A função `testSubstring` recebe a string a ser analisada, e movimenta duas janelas que percorrem a string de 0 até seu tamanho total (sliding window). 
+
 [!NOTE] Ex: Ovo, primeira janela: o, segunda janela: v, incremento, primeira janela: o, segunda janela: o, incremento, primeira janela: ov, segunda janela: vo. ![Exemplo](https://i.ibb.co/wyL2Djm/imagem-2022-02-18-171203.png)
 
 
