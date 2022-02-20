@@ -4,7 +4,7 @@ Repositório de Letícia Marques Pinho Tiago para exercícios realizados na Acad
 
 Todos os exercícios foram resolvidos usando a linguagem Java na IDE Eclipse, portanto os códigos estarão dentro da pasta Exercício :arrow_right: Src :arrow_right: Package :arrow_right: Arquivo
 
-Para a realização dos testes unitários, utilizou-se do pacote **JUnit 4**. Para a instalação do pacote utilizou-se as seguintes instruções: [Instalação JUnit 4](https://www.guru99.com/download-installation-junit.html).
+Para a realização dos testes unitários, utilizou-se do pacote **JUnit 4**. Para a instalação do pacote utilizou-se as seguintes instruções: [Instalação JUnit 4](https://www.guru99.com/download-installation-junit.html). Para rodar as aplicações, deverão baixar os pacotes de exercícios e abrir no próprio Eclipse.
 
 | Exercícios |
 |--- |
